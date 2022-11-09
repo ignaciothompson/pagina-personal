@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/styles.css" rel="stylesheet">
+    <title>Pagina Personal</title>
+</head>
+<body class="body">
+    <style> 
+        main {padding-top: 70px;}
+        
+        main {color: white;}
+    </style>
+    <nav class="topnav" id="myTopnav">
+        <div>
+            <a href="#inicio"><i class="fa fa-fw fa-home"></i> Inicio</a>
+            <a href="#seccion1"><i class="fa fa-graduation-cap"></i> Educación</a>
+            <a href="#seccion2"><i class="fa fa-file-code-o"></i> Proyectos</a>
+            <a href="#seccion3"><i class="fa fa-envelope"></i> Contacto</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+    <main class="main">
+        <div>
+            <div id="inicio" class="contenedor" >
+                <div>
+                    <h1 class="titulo1">
+                        <strong>Hola, mi nombre es Ignacio Thompson</strong>
+                    </h1>
+                    <p style="font-size: 20px;">
+                        <img class="imagen-presentacion " src="" alt="" width="300px" height="300px">
+                        Soy un joven de 20 años buscando su primera experiencia laboral en la industria de Desarrollo Web, me considerto una persona creativa y activa, soy un apasionado por el mundo de la computación y la mecanica.
+                        
+                    </p>
+                    <p style="font-size: 20px;">
+                        Comenze en el mundo de la tecnologia mediante los juegos, arreglar computadoras y por la intriga de conocer cosas nuevas, hice el bachillerato de de ingenieria en el Colegio alemán y luego comenze la FING (Facultad de Ingeniería pública) pero por la pandemia no la pude seguir.
+                        En 2022 comenze JaP (Jóvenes a Programar) un curso del estado que permite formarte en el ambito de forma gratuita.
+                    </p>
+                </div>
+            </div>
+            <hr style="color: white;">
+            <div id="seccion1" class="contenedor" >
+                <div class="titulo2">
+                    <h2>Educación</h2>
+                </div>
+                <div class="titulo3">
+                    <h4>Educación formal</h4>
+                    <p>Jóvenes a programar - Desarrollo Web - Marzo 2022 - Diciembre 2022 <i class="fa fa-clock-o" aria-hidden="true"></i></p>
+                    <p>Facultad de ingeniería - Ingeniería en sistemas - Marzo 2021 - Diciembre 2021 <i class="fa fa-times" aria-hidden="true"></i></p>
+                    <p>Colegio y Liceo alemán - Bachillerato de ingeniería - Marzo 2018 - Diciembre 2020 <i class="fa fa-check" aria-hidden="true"></i></p>
+                </div>
+                <div class="titulo3">
+                    <h4>Educación informal</h4>
+                    <p>Curso React.js 2022 <i class="fa fa-clock-o" aria-hidden="true"></i></p>
+                    <p>Curso Blender - 2022 <i class="fa fa-clock-o" aria-hidden="true"></i></p>
+                    <p>Curso Excel - medio a avanzado - 2021 <i class="fa fa-check" aria-hidden="true"></i></p>
+                    <p>Curso python - básico - 2020 <i class="fa fa-check" aria-hidden="true"></i></p>
+                </div>
+            </div>
+            <hr style="color: white;">
+            <div id="seccion2" class="contenedor">
+                <div class="titulo2">
+                    <h2>Proyectos</h2>
+                </div>
+                <div class="cards_wrap">
+                    <div class="card_item" onclick="window.location.href = 'https://ignaciothompson.github.io/workspace-inicial/'">
+                        <div class="card_inner">
+                            <img src="imagenes/ecommerce.jpg">
+                            <div class="nombre">Proyecto E-commerce</div>
+                            <div class="desc">Pagina E-commerce, proyecto de curso Jóvenes a programar</div>
+                        </div>
+                    </div>
+                    <div class="card_item">
+                        <div class="card_inner" onclick="window.location.href = 'https://ignaciothompson.github.io/buscador-nasa/'">
+                            <img src="imagenes/buscador-nasa.jpg">
+                            <div class="nombre">Buscador de la nasa</div>
+                            <div class="desc">Libreria de las imagenes tomadas por la nasa</div>
+                        </div>
+                    </div>
+                    <div class="card_item" >
+                        <div class="card_inner" onclick="window.location.href = 'https://ignaciothompson.github.io/buscador-peliculas/'"">
+                            <img src="imagenes/buscador-peliculas.jpg">
+                            <div class="nombre">Buscador peliculas</div>
+                            <div class="desc">Libreria de peliculas</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr style="color: white;">
+            <div id="seccion3" >
+                <div class="titulo2">
+                    <h2>Contacto</h2>
+                </div>
+                <div class="flex-container">
+                    <div class="flex-item tooltip" onclick="copiarMail()">
+                        <span class="tooltiptext" id="myTooltip">Copiar al portapapeles</span>
+                        Mail<i class="fa fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div class="flex-item" onclick="window.location.href = 'https://www.instagram.com/chona.thompson/'">Instagram <i class="fa fa-instagram" aria-hidden="true"></i></div>
+                    <div class="flex-item" onclick="window.location.href = 'https://www.linkedin.com/in/ignacio-thompson/'">LinkedIn <i class="fa fa-linkedin-square" aria-hidden="true"></i></div>
+                    <div class="flex-item" onclick="window.location.href = 'https://github.com/ignaciothompson'">Github <i class="fa fa-github-square" aria-hidden="true"></i></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
